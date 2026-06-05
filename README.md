@@ -1,6 +1,6 @@
 # Tech-Titans
 Rubric Based Evaluation System
-
+```
 A full stack web application for reviewing student PDF submissions, assigning rubric based marks, and storing evaluation results. The system supports both manual marking and AI assisted evaluation.
 
 Features
@@ -154,3 +154,4 @@ npm run dev
 npm run build  
 npm run lint  
 npm run preview  
+```
