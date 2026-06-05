@@ -1,5 +1,13 @@
-const extractText = require('./ocr');
+const extractText = require("./ocr");
 
-extractText('sample.png')
-    .then(text => console.log(text))
-    .catch(err => console.error(err));
+async function test() {
+
+  const text = await extractText(
+    "./uploads/1780427956829-Big Data Distributed Processing Exam Notes.pdf"
+  );
+
+  console.log(text);
+
+}
+
+test();
