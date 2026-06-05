@@ -1,12 +1,13 @@
-const Tesseract = require('tesseract.js');
+const fs = require("fs");
+const pdf = require("pdf-parse");
 
-async function extractText(imagePath) {
-    try {
-        const result = await Tesseract.recognize(imagePath, 'eng');
-        return result.data.text;
-    } catch (error) {
-        console.error(error);
-    }
+async function extractText(pdfPath) {
+
+  const dataBuffer = fs.readFileSync(pdfPath);
+
+  const data = await pdf(dataBuffer);
+
+  return data.text;
 }
 
 module.exports = extractText;
