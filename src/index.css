@@ -1,0 +1,67 @@
+:root {
+  --primary: #6c63ff;
+  --primary-light: #f4f3ff;
+  --border: #e5e7eb;
+  --text: #111827;
+  --subtext: #6b7280;
+  --bg: #f9fafb;
+  --white: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* MAIN CONTAINER */
+.container {
+  max-width: 1000px;
+  margin: 40px auto;
+  background: var(--white);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* HEADINGS */
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--text);
+}
+
+h2 {
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+/* CARD SECTIONS */
+.card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* INPUT GROUPS */
+.input-group {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.input-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-box label {
+  font-size: 13px;
+  color: var(--subtext);
+  margin-bottom: 5px;
+}
+
+/* INPU
